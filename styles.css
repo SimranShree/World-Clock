@@ -1,0 +1,106 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0D0D0D; /* Dark background */
+    color: #FFFFFF; /* White text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #1F2833; /* Dark blue header */
+    padding: 20px 0; /* Vertical padding */
+    text-align: center;
+}
+
+.header-title {
+    font-size: 2.5em; /* Larger header font size */
+    color: #66FCF1; /* Turquoise header text */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+    margin: 0; /* Remove margin */
+}
+
+.main-content {
+    flex: 1; /* Take remaining vertical space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clock-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.clock {
+    background-color: #1F2833; /* Dark blue clock background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Soft shadow */
+    padding: 40px; /* Padding around the clock */
+    margin-bottom: 20px; /* Space below clock */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#time {
+    font-size: 6em; /* Large font size for time */
+    letter-spacing: 0.1em; /* Slight letter spacing */
+    color: #45A29E; /* Teal text color */
+    background-color: #0B0C10; /* Dark background for clock text */
+    border-radius: 15px; /* Rounded corners for clock text area */
+    padding: 20px; /* Padding inside clock text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Strong shadow */
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Text glow effect */
+}
+
+.timezone-selector {
+    margin-top: 20px; /* Space above selector */
+}
+
+label {
+    font-size: 1.2em; /* Label font size */
+    color: #66FCF1; /* Turquoise label color */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+    margin-right: 10px; /* Right margin for spacing */
+}
+
+select {
+    font-size: 1.2em; /* Dropdown font size */
+    padding: 10px; /* Padding inside dropdown */
+    background-color: #1F2833; /* Dark blue background */
+    color: #66FCF1; /* Turquoise text color */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8); /* Soft shadow */
+    cursor: pointer; /* Pointer cursor */
+}
+
+select:hover,
+select:focus {
+    background-color: #0B0C10; /* Darker background on hover/focus */
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.9); /* Stronger shadow on hover/focus */
+}
+
+.footer {
+    background-color: #1F2833; /* Dark blue footer */
+    padding: 10px 0; /* Vertical padding */
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 0.8em; /* Footer text size */
+    color: #66FCF1; /* Turquoise footer text */
+}
+
